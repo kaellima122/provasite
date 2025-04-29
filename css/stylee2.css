@@ -1,0 +1,146 @@
+/* Deixa o background do site claro */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #003366; /* Azul marinho forte */
+  color: white;
+  padding: 40px 20px; /* Mais espaço em cima e embaixo para dar imponência */
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra discreta para destacar */
+  border-bottom: 4px solid #002244; /* Linha ainda mais escura na base */
+}
+
+/* Navegação */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Seções principais */
+main {
+  padding: 20px;
+}
+
+/* Galeria de imagens */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilo dos artigos */
+article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+/* Deixar o 'Leia mais' chamativo */
+details summary {
+  cursor: pointer;
+  color: #007BFF; /* Azul vivo */
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  transition: 0.3s;
+  text-shadow: 0 0 5px #00BFFF; /* Efeito de brilho azul */
+}
+
+details summary:hover {
+  color: #00BFFF; /* Azul ainda mais claro no hover */
+  text-shadow: 0 0 10px #00BFFF, 0 0 20px #00BFFF;
+}
+
+/* Estilo do texto interno */
+details p {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Rodapé */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Estilo dos textos e títulos gerais */
+h1, h2, p {
+  color: #222; /* Cinza escuro, quase preto */
+  font-weight: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra preta bem leve */
+  letter-spacing: 0.5px; /* Pequeno espaçamento para leitura melhor */
+}
+/* Títulos h1 e h2 */
+h1, h2 {
+  color: #222; /* Cinza escuro */
+  font-weight: 800; /* Mais grosso, mas ainda elegante */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  font-size: 28px;
+  letter-spacing: 0.5px; /* Pequeno espaçamento para melhor leitura */
+}
+header {
+  background-color: #003366; /* Azul marinho forte */
+  color: white;
+  padding: 40px 20px; /* Mais espaço em cima e embaixo para dar imponência */
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra discreta para destacar */
+  border-bottom: 4px solid #002244; /* Linha ainda mais escura na base */
+}
+header h1 {
+  font-size: 64px; /* AUMENTEI para dar destaque real */
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra BEM leve */
+  letter-spacing: 1.2px; /* Espaçamento entre letras, mais refinado */
+  font-family: 'Georgia', serif; /* Fonte séria e elegante */
+}
+
+
+
+/* Texto dos parágrafos */
+p {
+  font-size: 16px;
+  line-height: 1.6; /* Espaçamento maior entre as linhas para melhor leitura */
+}
+main {
+  background-color: #f8f9fa; /* Um branco levemente acinzentado para destacar do fundo */
+  padding: 40px 20px; /* Espaçamento interno para o texto não ficar colado */
+  max-width: 1200px; /* Largura máxima para o conteúdo não ficar muito espalhado */
+  margin: 30px auto; /* Centraliza o main */
+  border-radius: 8px; /* Cantos levemente arredondados para suavizar */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Uma leve sombra para dar profundidade */
+}
