@@ -11,6 +11,7 @@ body {
   color: #333;
 }
 
+/* Cabeçalho */
 header {
   background-color: #003366;
   color: white;
@@ -24,12 +25,15 @@ header h1 {
   font-size: 2.5rem;
 }
 
+/* Navegação */
 nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
+  padding: 0 1rem;
 }
 
 nav a {
@@ -42,7 +46,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Estilo principal */
+/* Conteúdo principal */
 main {
   padding: 2rem;
 }
@@ -56,19 +60,20 @@ main {
 /* Galeria 3x3 centralizada */
 .grid-galeria {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
-  max-width: 900px;
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .item-galeria {
   text-align: center;
-  max-width: 250px;
+  width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  padding: 0 0.5rem;
 }
 
 .item-galeria img {
@@ -85,13 +90,15 @@ main {
   transform: scale(1.05);
 }
 
-.item-galeria p {
+.item-galeria p,
+.item-galeria figcaption {
   font-size: 0.95rem;
   line-height: 1.2rem;
   margin: 0;
   padding: 0 0.3rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
 }
 
 /* Rodapé */
@@ -105,34 +112,26 @@ footer {
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .grid-galeria {
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  header h1 {
+    font-size: 2rem;
   }
 
   nav a {
     font-size: 1rem;
   }
-
-  header h1 {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 480px) {
-  /* Corrigir a centralização da galeria */
-  .grid-galeria {
-    grid-template-columns: 1fr;
-    justify-items: center; /* Centraliza os itens dentro da grid */
-    padding: 0; /* Remove qualquer padding extra */
-    margin: 0 auto; /* Centraliza o grid container */
-    width: 100%; /* Garante que o grid ocupe toda a largura disponível */
+  header h1 {
+    font-size: 1.6rem;
   }
 
   nav a {
     font-size: 0.9rem;
   }
 
-  header h1 {
-    font-size: 1.6rem;
+  .item-galeria {
+    width: 100%;
+    padding: 0 1rem;
   }
 }
