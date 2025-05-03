@@ -12,10 +12,12 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #003366; /* Azul marinho forte */
   color: white;
-  padding: 1rem 0;
+  padding: 40px 20px; /* Mais espaço em cima e embaixo para dar imponência */
   text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra discreta para destacar */
+  border-bottom: 4px solid #002244; /* Linha ainda mais escura na base */
 }
 
 header h1 {
@@ -71,7 +73,7 @@ main {
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #003366;
   color: white;
   text-align: center;
   padding: 1rem;
