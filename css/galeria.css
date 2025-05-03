@@ -58,21 +58,38 @@ main {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem;
 }
 
+.item-galeria {
+  text-align: center;
+  max-width: 250px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 .item-galeria img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 180px;
   border-radius: 5px;
   transition: transform 0.3s ease;
   display: block;
+  margin-bottom: 0.5rem;
 }
 
 .item-galeria img:hover {
   transform: scale(1.05);
+}
+
+.item-galeria p {
+  font-size: 0.95rem;
+  line-height: 1.2rem;
+  margin: 0;
+  padding: 0 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Rodapé */
