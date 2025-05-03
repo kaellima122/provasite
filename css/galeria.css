@@ -104,13 +104,30 @@ footer {
     font-size: 0.9rem;
   }
 }
-@media (min-width: 768px) {
- .grid-galeria {
+.grid-galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   justify-items: center;
-  max-width: 1200px;     /* Limita o tamanho total do grid */
-  margin: 0 auto;         /* Centraliza o bloco dentro do main */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .grid-galeria {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (max-width: 768px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
