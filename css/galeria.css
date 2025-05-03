@@ -1,6 +1,4 @@
-/* =======================
-   RESET E CONFIGURAÇÕES GERAIS
-========================== */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -13,25 +11,19 @@ body {
   color: #333;
 }
 
-/* =======================
-   CABEÇALHO
-========================== */
 header {
   background-color: #003366; /* Azul marinho forte */
   color: white;
-  padding: 40px 20px;
+  padding: 40px 20px; /* Mais espaço em cima e embaixo para dar imponência */
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  border-bottom: 4px solid #002244;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra discreta para destacar */
+  border-bottom: 4px solid #002244; /* Linha ainda mais escura na base */
 }
 
 header h1 {
   font-size: 2.5rem;
 }
 
-/* =======================
-   NAVEGAÇÃO
-========================== */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -49,9 +41,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* =======================
-   CONTEÚDO PRINCIPAL
-========================== */
+/* Estilo principal */
 main {
   padding: 2rem;
 }
@@ -62,33 +52,26 @@ main {
   margin-bottom: 2rem;
 }
 
-/* =======================
-   GALERIA DE IMAGENS
-========================== */
+/* Layout de Galeria */
 .grid-galeria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas em telas grandes */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grade responsiva */
   gap: 1rem;
-  justify-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .item-galeria img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 200px; /* Altura fixa para todas */
+  object-fit: cover; /* Corta o que sobrar e mantém proporção sem distorcer */
   border-radius: 5px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
 }
 
 .item-galeria img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Zoom suave na imagem */
 }
 
-/* =======================
-   RODAPÉ
-========================== */
+/* Footer */
 footer {
   background-color: #003366;
   color: white;
@@ -97,30 +80,18 @@ footer {
   margin-top: 2rem;
 }
 
-/* =======================
-   MEDIA QUERIES
-========================== */
-@media (max-width: 992px) {
-  .grid-galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
   body {
     font-size: 0.9rem;
-  }
-
-  nav a {
-    font-size: 1rem;
   }
 
   #galeria h2 {
     font-size: 1.8rem;
   }
 
-  .grid-galeria {
-    grid-template-columns: repeat(2, 1fr);
+  nav a {
+    font-size: 1rem;
   }
 }
 
@@ -131,9 +102,5 @@ footer {
 
   nav a {
     font-size: 0.9rem;
-  }
-
-  .grid-galeria {
-    grid-template-columns: 1fr;
   }
 }
