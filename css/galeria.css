@@ -119,12 +119,13 @@ footer {
 }
 
 @media (max-width: 480px) {
-  /* Corrigir centralização da galeria */
+  /* Corrigir a centralização da galeria */
   .grid-galeria {
     grid-template-columns: 1fr;
-    padding: 0 10px; /* Adicionando um pequeno padding lateral */
-    justify-items: center; /* Força a centralização */
-    margin: 0 auto; /* Garantir que o container fique centralizado */
+    justify-items: center; /* Centraliza os itens dentro da grid */
+    padding: 0; /* Remove qualquer padding extra */
+    margin: 0 auto; /* Centraliza o grid container */
+    width: 100%; /* Garante que o grid ocupe toda a largura disponível */
   }
 
   nav a {
