@@ -105,7 +105,7 @@ footer {
   }
 }
 @media (min-width: 768px) {
-  .container-imagens {
+  .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
