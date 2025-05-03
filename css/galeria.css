@@ -104,3 +104,12 @@ footer {
     font-size: 0.9rem;
   }
 }
+@media (min-width: 768px) {
+  .container-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+}
