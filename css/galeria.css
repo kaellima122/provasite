@@ -12,12 +12,12 @@ body {
 }
 
 header {
-  background-color: #003366; /* Azul marinho forte */
+  background-color: #003366;
   color: white;
-  padding: 40px 20px; /* Mais espaço em cima e embaixo para dar imponência */
+  padding: 40px 20px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra discreta para destacar */
-  border-bottom: 4px solid #002244; /* Linha ainda mais escura na base */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #002244;
 }
 
 header h1 {
@@ -55,20 +55,21 @@ main {
 /* Layout de Galeria */
 .grid-galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grade responsiva */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
   gap: 1rem;
+  padding: 0 1rem;
 }
 
 .item-galeria img {
   width: 100%;
-  height: 200px; /* Altura fixa para todas */
-  object-fit: cover; /* Corta o que sobrar e mantém proporção sem distorcer */
+  height: 200px;
+  object-fit: cover;
   border-radius: 5px;
-  transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+  transition: transform 0.3s ease;
 }
 
 .item-galeria img:hover {
-  transform: scale(1.05); /* Zoom suave na imagem */
+  transform: scale(1.05);
 }
 
 /* Footer */
@@ -80,8 +81,12 @@ footer {
   margin-top: 2rem;
 }
 
-/* Media Queries */
+/* Media Queries para responsividade */
 @media (max-width: 768px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha em tablets */
+  }
+
   body {
     font-size: 0.9rem;
   }
@@ -96,6 +101,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .grid-galeria {
+    grid-template-columns: 1fr; /* 1 por linha em celulares */
+  }
+
   header h1 {
     font-size: 1.8rem;
   }
